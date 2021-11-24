@@ -58,7 +58,7 @@ body {
 
 .faq__head {
     display: grid;
-    grid-template-columns: 1fr 15px;
+    grid-template-columns: 1fr 10px;
     grid-gap: 10px;
     padding: 15px 0;
     cursor: pointer;
@@ -83,17 +83,18 @@ body {
     font-weight: 700;
 }
 
-.faq__button {
-    background: transparent;
-    border: 0;
-    outline: 0;
-    height: 15px;
-    cursor: pointer;
+.faq__icon {
+    height: 10px;
+    width: 10px;
     transition: .5s;
 }
 
-.faq__head.active .faq__button {
+.faq__head.active .faq__icon {
     transform: rotate(180deg);
+}
+
+.faq__icon img {
+    object-fit: contain;
 }
 
 .faq__body {
